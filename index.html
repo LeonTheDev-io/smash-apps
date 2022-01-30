@@ -68,7 +68,7 @@
 	</div>
 	
 	<div id="char" class="sort">
-		<div>If no characters are loaded here, choose an imageset by clicking the "Change images" button above.</div>
+		<div>If no images are loaded here, choose an imageset by clicking the "Change images" button above.</div>
 	</div>
 	
 	<div id="overlay">
@@ -87,19 +87,7 @@
 				<h1>CHANGE IMAGES</h1>
 				<span id="close"></span>
 				<div id="switchButtons">
-					<button id="switch64">Super Smash Bros. 64</button>
-					<button id="switchMelee">Super Smash Bros. Melee</button>
-					<button id="switchBrawl">Super Smash Bros. Brawl</button>
-					<button id="switchSmash4">Super Smash Bros. 4 (Screenshots)</button>
-					<button id="switchSSB4Renders">Super Smash Bros. 4 (Renders)</button><br>
-					<button id="switchPM">Project M</button>
-					<button id="switchSSF2">Super Smash Flash 2</button>
-					<button id="switchBrawlMinus">Brawl Minus</button>
-					<button id="switchBrawlZeus">Brawl Zeus</button><br>
-					<button id="switchSFV">Street Fighter V</button>
-					<button id="switchGGREV">Guilty Gear Xrd -Revelator-</button>
-					<button id="switchBrawlhalla">Brawlhalla</button>
-					<button id="switchOW">Overwatch</button>
+					<button id="switchstaff">KizmoTek Staff Team</button>
 				</div>
 				<p><strong>Changing the imageset will empty your tierlist!</strong> Do not click unless you are sure you want to change! You cannot undo this.</p>
 			</div>
@@ -136,20 +124,7 @@
 		
 		// character images
 		var singleChar = "<div class='character'></div>";
-		var gameSmash4 = ["ssb4","mario","luigi","peach","bowser","yoshi","rosalinaluma","bowserjr","wario","donkeykong","diddykong","mrgamewatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","marth","ike","robin","duckhunt","kirby","kingdedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","rob","ness","captainfalcon","villager","olimar","wiifittrainer","shulk","drmario","darkpit","lucina","pacman","megaman","sonic","mewtwo","lucas","roy","ryu","cloud","corrin","bayonetta","miibrawler1","miigunner1","miisword1","miibrawler","miigunner","miisword"];
-		var gameSSB4Renders = ["ssb4r","mario","luigi","peach","bowser","yoshi","rosalinaluma","bowserjr","wario","donkeykong","diddykong","mrgamewatch","littlemac","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","palutena","marth","ike","robin","duckhunt","kirby","kingdedede","metaknight","fox","falco","pikachu","charizard","lucario","jigglypuff","greninja","rob","ness","captainfalcon","villager","olimar","wiifittrainer","shulk","drmario","darkpit","lucina","pacman","megaman","sonic","mewtwo","lucas","roy","ryu","cloud","corrin","bayonetta","miibrawler1","miigunner1","miisword1","miibrawler","miigunner","miisword"];
-		var gameMelee = ["melee","drmario","mario","luigi","bowser","peach","yoshi","dk","falcon","ganon","falco","fox","ness","icies","kirby","samus","zelda","sheik","link","ylink","pichu","pikachu","jigglypuff","mewtwo","gnw","marth","roy"];
-		var game64 = ["64","luigi","mario","dk","link","samus","falcon","ness","yoshi","kirby","fox","pikachu","jigglypuff"];
-		var gameBrawl = ["brawl","mario","luigi","peach","bowser","donkeykong","diddykong","yoshi","wario","link","zelda","sheik","ganondorf","toonlink","samus","zerosuitsamus","pit","iceclimbers","rob","kirby","metaknight","kingdedede","olimar","fox","falco","wolf","captainfalcon","pikachu","pokemontrainer","lucario","jigglypuff","marth","ike","ness","lucas","mrgamewatch","snake","sonic"];
-		var gamePM = ["pm","wario","mario","luigi","peach","bowser","yoshi","donkeykong","diddykong","falcon","wolf","fox","falco","icies","zelda","sheik","link","toonlink","ganon","mewtwo","lucario","pikachu","jigglypuff","squirtle","ivysaur","charizard","samus","zerosuit","lucas","ness","pit","kirby","metaknight","dedede","ike","marth","roy","olimar","rob","gnw","snake","sonic"];
-		var gameBrawlMinus = ["bminus","mario","luigi","peach","bowser","yoshi","donkeykong","diddy","wario","waluigi","link","zelda","sheik","ganondorf","toonlink","samus","zss","ness","lucas","pikachu","jigglypuff","pichu","mewtwo","squirtle","ivysaur","charizard","lucario","kirby","dedede","mk","fox","falco","wolf","marth","roy","ike","captainfalcon","gnw","iceclimbers","rob","pit","olimar","snake","sonic"];
-		var gameBrawlZeus = ["zeus","mario","luigi","peach","koopa","yoshi","dk","dd","wario","link","zelda","sheik","ganon","tlik","samus","zss","ness","lucas","pikachu","pichu","purin","m2","zenigame","fushigisou","lizardon","lucario","kirby","ddd","MK","fox","falco","wolf","marth","roy","ike","lucina","wayu","cf","gw","rob","pit","olimar","snake","sonic","4cloud","blackpit","cloudminus","geno","knuckles","lyn","mac","meta","ridley","ryu","shadow","shulk"];
-		var gameSFV = ["sfv","alex","akuma","balrog","birdie","cammy","chunli","dhalsim","fang","guile","ibuki","karin","ken","kolin","laura","mbison","nash","necalli","rashid","rmika","ryu","vega","zangief","juri","urien"];
-		var gameGGREV = ["ggrev","axl","bedman","chipp","elphelt","faust","ino","jacko","jam","johnny","kum","ky","leo","may","millia","potemkin","ramlethal","raven","sin","slayer","sol","venom","zato1","dizzy"];
-		var gameSSF2 = ["ssf2","mario","dk","link","kirby","samus","megaman","fox","ness","pikachu","sonic","peach","wario","zelda","sheik","metaknight","zss","bomberman","falcon","blackmage","jigglypuff","tails","yoshi","marth","lloyd","chibirobo","sora","ichigo","naruto","goku"];
-		var gameCorrinMode = ["ssb4r","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm","corrinm"];
-		var gameOW = ["ow","ana","bastion","dva","genji","hanzo","junkrat","lucio","mccree","mei","mercy","pharah","reaper","reinhardt","roadhog","soldier","sombra","symmetra","torbjorn","tracer","widowmaker","winston","zarya","zenyatta"];
-		var gameBrawlhalla = ["bh","ada","asuri","azoth","barraza","bodvar","brynn","cassidy","diana","ember","gnash","hattori","jhala","koji","kor","lordvraxx","lucien","orion","queennai","ragnir","scarlet","sentinel","sirroland","teros","thatch","ulgrim","val","wushang","axe","bow","gauntlet","gun","hammer","katar","lance","spear","sword"];
+		var staff = ["staff","yolo","kronos","locle","autumn","ike","sculted","jswat","jay","sky","officer","butters","leon"];
 		
 		var singleTier = "<tr><td class='labelHolder' contenteditable='true' style='background-color:#FFFF7F'><span class='label'>NEW</span></td><td><div class='tier sort' id='rows'><div class='hiddenkid'></div></div></td><td><div id='settings'></div><div id='moveButtons'><div id='moveUp'></div><div id='moveDown'></div></div></td></tr>";
 		
@@ -171,7 +146,7 @@
 		var currentColor;
 		var colorIndex;
 		var currentGame;
-		var currentGameChars = gameSmash4;
+		var currentGameChars;
 		var characters;
 		var resized,tableWidth;
 					  
@@ -222,19 +197,7 @@
 		$(document).on("click", "#gameChange button", function() { // change game
 			console.log("game switching");
 			switch($(this).attr("id")) {
-				case "switch64": changeGame(game64);break;
-				case "switchMelee": changeGame(gameMelee);break;
-				case "switchBrawl": changeGame(gameBrawl);break;
-				case "switchPM": changeGame(gamePM);break;
-				case "switchBrawlMinus": changeGame(gameBrawlMinus);break;
-				case "switchBrawlZeus": changeGame(gameBrawlZeus);break;
-				case "switchSmash4": changeGame(gameSmash4);break;
-				case "switchSSB4Renders": changeGame(gameSSB4Renders);break;
-				case "switchSFV": changeGame(gameSFV);break;
-				case "switchGGREV": changeGame(gameGGREV);break;
-				case "switchSSF2": changeGame(gameSSF2);break;
-				case "switchBrawlhalla": changeGame(gameBrawlhalla);break;
-				case "switchOW": changeGame(gameOW);break;
+				case "switchstaff": changeGame(staff);break;
 			}
 		});
 			
@@ -305,20 +268,9 @@
 				loadCode($("#exportcode").val());
 			} else if (clicked == "reset") {
 				switch(currentGameChars[0]) {
-					case "64": changeGame(game64);break;
-					case "melee": changeGame(gameMelee);break;
-					case "brawl": changeGame(gameBrawl);break;
-					case "bminus": changeGame(gameBrawlMinus);break;
-					case "zeus": changeGame(gameBrawlZeus);break;
-					case "pm": changeGame(gamePM);break;
-					case "ssb4": changeGame(gameSmash4);break;
-					case "sfv": changeGame(gameSFV);break;
-					case "ggrev": changeGame(gameGGREV);break;
-					case "ssf2": changeGame(gameSSF2);break;
-					case "bh": changeGame(gameBrawlhalla);break;
-					case "ow": changeGame(gameOW);break;
+					case "staff": changeGame(staff);break;
 				}
-				loadCode(currentGameChars[0]+"==S|0==A|1==B|3==C|5==D|7==E|8==F|9");
+				loadCode(currentGameChars[0]+"staff==Good|5==Medium|3==Bad|0");
 			}
 		});
 		
@@ -409,19 +361,7 @@
 			});
 			console.log(processedCode);
 			switch(processedCode[0][0]) {
-				case "64": changeGame(game64);break;
-				case "melee": changeGame(gameMelee);break;
-				case "brawl": changeGame(gameBrawl);break;
-				case "bminus": changeGame(gameBrawlMinus);break;
-				case "zeus": changeGame(gameBrawlZeus);break;
-				case "pm": changeGame(gamePM);break;
-				case "ssb4": changeGame(gameSmash4);break;
-				case "ssb4r": changeGame(gameSSB4Renders);break;
-				case "sfv": changeGame(gameSFV);break;
-				case "ggrev": changeGame(gameGGREV);break;
-				case "ssf2": changeGame(gameSSF2);break;
-				case "bh": changeGame(gameBrawlhalla);break;
-				case "ow": changeGame(gameOW);break;
+				case "staff": changeGame(staff);break;
 			}
 			for (var i = 1; i < processedCode.length; i++) {
 				$("tbody").append(singleTier);
